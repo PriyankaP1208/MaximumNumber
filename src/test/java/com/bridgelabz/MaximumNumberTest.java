@@ -22,4 +22,22 @@ public class MaximumNumberTest {
         Integer maximum = MaximumNumber.compareIntegerValues(40, 60, 100);
         Assert.assertEquals((Integer) 100, maximum);
     }
+
+    @Test
+    public void givenFloatNumbers_WhenFirstNumberIsMaximum_ShouldReturnMaximum() {
+        Float maximum = MaximumNumber.compareFloatValues(10.1f, 5.2f, 2.1f);
+        Assert.assertEquals((Float) 10.1f, maximum);
+    }
+
+    @Test
+    public void givenFloatNumbers_WhenSecondNumberIsMaximum_ShouldReturnMaximum() {
+        Float maximum = MaximumNumber.compareFloatValues(10.1f, 15.2f, 2.1f);
+        Assert.assertEquals((Float) 15.2f, maximum);
+    }
+
+    @Test
+    public void givenFloatNumbers_WhenThirdNumberIsMaximum_ShouldReturnMaximum() {
+        Float maximum = MaximumNumber.compareFloatValues(10.1f, 15.2f, 20.1f);
+        Assert.assertEquals((Float) 20.1f, maximum);
+    }
 }
