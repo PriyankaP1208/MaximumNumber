@@ -1,8 +1,15 @@
 package com.bridgelabz;
 
-public class MaximumNumber {
-    public static <T extends Comparable<T>> T max(T x, T y, T z){
-        T max = x;
+public class MaximumNumber <T extends Comparable<T>> {
+    T x, y, z;
+    T max;
+    public MaximumNumber(T x, T y, T z) {
+        this.x = x;
+        this.y = y;
+        this.z = z;
+    }
+    public T maximum(){
+        max = x;
         if(y.compareTo(max) > 0){
             max = y;
         }
