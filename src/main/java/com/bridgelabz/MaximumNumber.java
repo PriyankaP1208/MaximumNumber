@@ -1,42 +1,14 @@
 package com.bridgelabz;
 
 public class MaximumNumber {
-    public static Integer compareIntegerValues(Integer num1, Integer num2, Integer num3){
-        Integer maxNumber = num1;
-        if(num2.compareTo(maxNumber) > 0)
-        {
-            maxNumber = num2;
+    public static <T extends Comparable<T>> T max(T x, T y, T z){
+        T max = x;
+        if(y.compareTo(max) > 0){
+            max = y;
         }
-        if(num3.compareTo(maxNumber) > 0)
-        {
-            maxNumber = num3;
+        if(z.compareTo(max) > 0){
+            max = z;
         }
-        return maxNumber;
-    }
-
-    public static Float compareFloatValues(Float num1, Float num2, Float num3){
-        Float maxNumber = num1;
-        if(num2.compareTo(maxNumber) > 0)
-        {
-            maxNumber = num2;
-        }
-        if(num3.compareTo(maxNumber) > 0)
-        {
-            maxNumber = num3;
-        }
-        return maxNumber;
-    }
-
-    public static String compareStringValues(String s1, String s2, String s3){
-        String maxString = s1;
-        if(s2.compareTo(maxString) > 0)
-        {
-            maxString = s2;
-        }
-        if(s3.compareTo(maxString) > 0)
-        {
-            maxString = s3;
-        }
-        return maxString;
+        return max;
     }
 }

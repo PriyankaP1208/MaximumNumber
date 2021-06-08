@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.MaximumNumberTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-06-08T05:18:40" hostname="DESKTOP-FSCNQ7S" time="0.006">
+<testsuite name="com.bridgelabz.MaximumNumberTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-06-08T05:59:03" hostname="DESKTOP-FSCNQ7S" time="0.016">
   <properties/>
   <testcase name="givenStrings_WhenFirstStringIsMaximum_ShouldReturnMaximum" classname="com.bridgelabz.MaximumNumberTest" time="0.002"/>
   <testcase name="givenFloatNumbers_WhenFirstNumberIsMaximum_ShouldReturnMaximum" classname="com.bridgelabz.MaximumNumberTest" time="0.0"/>
-  <testcase name="givenStrings_WhenThirdStringIsMaximum_ShouldReturnMaximum" classname="com.bridgelabz.MaximumNumberTest" time="0.0"/>
+  <testcase name="givenStrings_WhenThirdStringIsMaximum_ShouldReturnMaximum" classname="com.bridgelabz.MaximumNumberTest" time="0.001"/>
   <testcase name="givenFloatNumbers_WhenThirdNumberIsMaximum_ShouldReturnMaximum" classname="com.bridgelabz.MaximumNumberTest" time="0.001"/>
   <testcase name="givenIntegerNumbers_WhenFirstNumberIsMaximum_ShouldReturnMaximum" classname="com.bridgelabz.MaximumNumberTest" time="0.0"/>
   <testcase name="givenFloatNumbers_WhenSecondNumberIsMaximum_ShouldReturnMaximum" classname="com.bridgelabz.MaximumNumberTest" time="0.001"/>
-  <testcase name="givenIntegerNumbers_WhenThirdNumberIsMaximum_ShouldReturnMaximum" classname="com.bridgelabz.MaximumNumberTest" time="0.0"/>
-  <testcase name="givenStrings_WhenSecondStringIsMaximum_ShouldReturnMaximum" classname="com.bridgelabz.MaximumNumberTest" time="0.0"/>
+  <testcase name="givenIntegerNumbers_WhenThirdNumberIsMaximum_ShouldReturnMaximum" classname="com.bridgelabz.MaximumNumberTest" time="0.001"/>
+  <testcase name="givenStrings_WhenSecondStringIsMaximum_ShouldReturnMaximum" classname="com.bridgelabz.MaximumNumberTest" time="0.001"/>
   <testcase name="givenIntegerNumbers_WhenSecondNumberIsMaximum_ShouldReturnMaximum" classname="com.bridgelabz.MaximumNumberTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
