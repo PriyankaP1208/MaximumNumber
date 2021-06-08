@@ -40,4 +40,22 @@ public class MaximumNumberTest {
         Float maximum = MaximumNumber.compareFloatValues(10.1f, 15.2f, 20.1f);
         Assert.assertEquals((Float) 20.1f, maximum);
     }
+
+    @Test
+    public void givenStrings_WhenFirstStringIsMaximum_ShouldReturnMaximum() {
+        String maximum = MaximumNumber.compareStringValues("Peach", "Apple", "Banana");
+        Assert.assertEquals("Peach", maximum);
+    }
+
+    @Test
+    public void givenStrings_WhenSecondStringIsMaximum_ShouldReturnMaximum() {
+        String maximum = MaximumNumber.compareStringValues("Apple", "Peach", "Banana");
+        Assert.assertEquals("Peach", maximum);
+    }
+
+    @Test
+    public void givenStrings_WhenThirdStringIsMaximum_ShouldReturnMaximum() {
+        String maximum = MaximumNumber.compareStringValues("Apple", "Banana", "Peach");
+        Assert.assertEquals("Peach", maximum);
+    }
 }

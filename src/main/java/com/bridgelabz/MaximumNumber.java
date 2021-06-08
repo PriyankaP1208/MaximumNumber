@@ -26,4 +26,17 @@ public class MaximumNumber {
         }
         return maxNumber;
     }
+
+    public static String compareStringValues(String s1, String s2, String s3){
+        String maxString = s1;
+        if(s2.compareTo(maxString) > 0)
+        {
+            maxString = s2;
+        }
+        if(s3.compareTo(maxString) > 0)
+        {
+            maxString = s3;
+        }
+        return maxString;
+    }
 }
