@@ -1,21 +1,24 @@
 package com.bridgelabz;
 
 public class MaximumNumber <T extends Comparable<T>> {
-    T x, y, z;
-    T max;
-    public MaximumNumber(T x, T y, T z) {
-        this.x = x;
-        this.y = y;
-        this.z = z;
+    T[] values;
+
+    @SafeVarargs
+    public MaximumNumber(T... values){
+        this.values = values;
     }
-    public T maximum(){
-        max = x;
-        if(y.compareTo(max) > 0){
-            max = y;
+    public static <T extends Comparable<T>> T max(T... values) {
+        T maximum = values[0];
+        for (int i = 1; i < values.length; i++)
+        {
+            if(maximum.compareTo(values[i]) < 0) {
+                maximum = values[i];
+            }
         }
-        if(z.compareTo(max) > 0){
-            max = z;
-        }
-        return max;
+        return maximum;
+    }
+
+    public T maximumValue() {
+        return max(values);
     }
 }
